@@ -4,7 +4,7 @@ function Home() {
     return (
       <div className="
             min-h-[80vh]
-          bg-white
+          bg-slate-100
           flex 
           justify-center
           ">
@@ -23,17 +23,27 @@ function Home() {
                   items-center 
                   justify-center 
                   py-4
+                  text-center
+                  
                   " >
   
-                  <h2 className="
-                      text-5xl
+                  <h3 className="
+                      text-3xl
                       font-bold
                       ">
-                          Seja Bem Vindo a Farmacom</h2>
+                          Bem-vindo(a) à Farmacom, onde sua saúde é nossa prioridade! 🌿💊</h3>
                   <p className="
                       text-xl
+                      py-4
                       ">
-                          Venha conferir Nossos produtos</p>
+                          Aqui, você encontra atendimento de qualidade, uma ampla variedade de medicamentos, produtos de cuidado pessoal e soluções de bem-estar. Estamos sempre prontos para cuidar de você e da sua família com atenção e confiança.</p>
+
+                  <h3 className="
+                      text-3xl
+                      font-bold
+                      py-4
+                      ">
+                          Conte com a Farmacom para viver melhor!</h3>
   
                   <div className="
                       flex

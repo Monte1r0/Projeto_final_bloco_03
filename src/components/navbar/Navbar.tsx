@@ -13,7 +13,7 @@ function Navbar() {
           <div className="container flex justify-between text-lg">
           <Link to='/' className='text-2xl font-bold uppercase'>FARMACOM</Link>
 
-            <div className='flex gap-4 text-black'>
+            <div className='flex gap-4'>
             <div className='hover:underline'></div>
             <Link to='/produtos' className='hover:underline'>Produtos</Link>
             <Link to='/categorias' className='hover:underline'>Categorias</Link>

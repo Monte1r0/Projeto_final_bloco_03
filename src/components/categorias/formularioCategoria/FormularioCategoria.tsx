@@ -13,9 +13,7 @@ function FormularioCategoria() {
 
 
   async function buscarPorId(id: string) {
-    await buscar(`/categorias/${id}`, setCategoria, {
-
-    });
+    await buscar(`/categorias/${id}`, setCategoria);
   }
 
   useEffect(() => {
@@ -38,9 +36,7 @@ function FormularioCategoria() {
 
     if (id !== undefined) {
       try {
-        await atualizar(`/categorias`, categoria, setCategoria, {
-
-        })
+        await atualizar(`/categorias`, categoria, setCategoria)
 
         alert('Categoria atualizado com sucesso')
         retornar()
@@ -57,9 +53,7 @@ function FormularioCategoria() {
 
     } else {
       try {
-        await cadastrar(`/categorias`, categoria, setCategoria, {
-
-        })
+        await cadastrar(`/categorias`, categoria, setCategoria)
 
         alert('Categoria cadastrado com sucesso')
 
@@ -82,20 +76,20 @@ function FormularioCategoria() {
 
 
   return (
-    <div className="container flex flex-col items-center justify-center mx-auto">
+    <div className="container flex flex-col items-center justify-center mx-auto ">
       <h1 className="text-4xl text-center my-8">
         {id === undefined ? 'Cadastre um novo categoria' : 'Editar categoria'}
       </h1>
 
       <form className="w-1/2 flex flex-col gap-4" onSubmit={gerarNovaCategoria}>
         <div className="flex flex-col gap-2">
-          <label htmlFor="descricao">Descrição do categoria</label>
+          <label htmlFor="nome">Descrição do categoria</label>
           <input
             type="text"
             placeholder="Descrição"
-            name='descricao'
+            name='nome'
             className="border-2 border-slate-700 rounded p-2"
-            value={categoria.descricao}
+            value={categoria.nome}
             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
           />
         </div>
