@@ -11,12 +11,14 @@ function Navbar() {
     <>
      <div className='w-full bg-[#F02925] text-white flex justify-center py-4'>
           <div className="container flex justify-between text-lg">
-          <Link to='/home' className='text-2xl font-bold uppercase'>FARMACOM</Link>
+          <Link to='/' className='text-2xl font-bold uppercase'>FARMACOM</Link>
 
             <div className='flex gap-4 text-black'>
-            <div className='hover:underline'>Produtos</div>
-            <Link to='/temas' className='hover:underline'>Categorias</Link>
-              <div className='hover:underline'>Cadastrar Categoria</div>
+            <div className='hover:underline'></div>
+            <Link to='/produtos' className='hover:underline'>Produtos</Link>
+            <Link to='/categorias' className='hover:underline'>Categorias</Link>
+            <Link to='/cadastroCategoria' className='hover:underline'>Cadastrar Categoria</Link>
+              <div className='hover:underline'></div>
              
             </div>
           </div>
